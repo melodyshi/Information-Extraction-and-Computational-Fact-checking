@@ -2,7 +2,7 @@
 """
 Created on Mon Jul  2 20:24:15 2018
 
-@author: alex
+@author: Melody Shi
 """
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 import logging, sys, time
