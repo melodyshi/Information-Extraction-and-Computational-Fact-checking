@@ -326,7 +326,9 @@ def get_TaggedDocuments_pm(pm, instances, iam = 0):
         
 def get_TaggedDocuments_wrm(manager):
     """
-    Produces TaggedDocuments and labels them appropriately from the documents in the Web Resource Manager instance and saves them in "../data/webresourcemanager/TaggedDocuments/Labeled/". Multithreading safe using instances/iam
+    Produces TaggedDocuments and labels them appropriately from the documents 
+    in the Web Resource Manager instance and saves them in "../data/webresourcemanager/TaggedDocuments/Labeled/". 
+    Multithreading safe using instances/iam
 
     
     Parameters
@@ -393,7 +395,8 @@ def get_TaggedDocuments_wrm(manager):
                 
 def score_docs_pm():
     """
-    Scores the TaggedDocuments in "../data/profilemanager/TaggedDocuments/Labeled" using Profile Manager Doc2Vec model and saves them in "../data/profilemanager/TaggedDocuments/Classified/".
+    Scores the TaggedDocuments in "../data/profilemanager/TaggedDocuments/Labeled" 
+    using Profile Manager Doc2Vec model and saves them in "../data/profilemanager/TaggedDocuments/Classified/".
 
     
     Returns
