@@ -25,7 +25,7 @@ Returns
 
 Produces TaggedDocuments and labels them appropriately from the documents in the Profile Manager instance and saves them in "../data/profilemanager/TaggedDocuments/Labeled/". Multithreading safe using instances/iam
 
-Parameters
+Parameters 
 * pm (ProfileManager) : a ProfileManager with the documents you would like to Tag
 * instances (int) : the number of instances you'd like to run in parallel
 * iam (int) : the current instance's assignment [0-*instances*) (default = 0)
@@ -115,11 +115,11 @@ Returns
 * sklearn.feature_extraction.text.TfidfVectorizer : a TtfidfVectorizer with 'english' stop words and fitted to the data.
 
 ##### train_tfidf_pm()
-
+  
 Returns a TF-IDF instance trained on the Profile Manager instance
 
 Returns
-* sklearn.feature_extraction.text.TfidfVectorizer : a TtfidfVectorizer with 'english' stop words and fitted to the Profile Manager corpus
+* sklearn.feature_extraction.text.TfidfVectorizer : a TtfidfVectorizer with 'english' stop words and fitted to the Profile Manager corpus 
 
 ##### train_tfidf_wrm()
 
