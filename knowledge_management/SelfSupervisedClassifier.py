@@ -14,7 +14,9 @@ from knowledge_management.WebResourceManager import *
 
 def convert_to_corpus(doc):
     """
-    Sets all of the text to lower case, removes all non-alphanumeric characters besides apostrophe (') and hyphen (-) with a Regular Expression. All words are lemmatized and then stemmed.
+    Sets all of the text to lower case, removes all non-alphanumeric characters
+    besides apostrophe (') and hyphen (-) with a Regular Expression. 
+    All words are lemmatized and then stemmed.
 
 
     Parameters
@@ -146,7 +148,8 @@ def train_tfidf_wrm():
     
 def score_tfidf_pm(tfidf, instances, iam):
     """
-    Scores the documents in the Profile Manager instance using TF-IDF and saves them in "../data/profilemanager/TaggedDocuments/Classified/". Multithreading safe using instances/iam.
+    Scores the documents in the Profile Manager instance using TF-IDF and 
+    saves them in "../data/profilemanager/TaggedDocuments/Classified/". Multithreading safe using instances/iam.
 
     
     Parameters
@@ -187,7 +190,8 @@ def score_tfidf_pm(tfidf, instances, iam):
             
 def score_tfidf_wrm(tfidf):
     """
-    Scores the documents in the Profile Manager instance using TF-IDF and saves them in "../data/webresourcemanager/TaggedDocuments/Classified/"
+    Scores the documents in the Profile Manager instance using TF-IDF and 
+    saves them in "../data/webresourcemanager/TaggedDocuments/Classified/"
 
     
     Parameters
@@ -222,7 +226,9 @@ def score_tfidf_wrm(tfidf):
 
 def get_TaggedDocuments_pm(pm, instances, iam = 0):
     """
-    Produces TaggedDocuments and labels them appropriately from the documents in the Profile Manager instance and saves them in "../data/profilemanager/TaggedDocuments/Labeled/". Multithreading safe using instances/iam
+    Produces TaggedDocuments and labels them appropriately from the documents 
+    in the Profile Manager instance and saves them in "../data/profilemanager/TaggedDocuments/Labeled/". 
+    Multithreading safe using instances/iam
 
     
     Parameters
@@ -409,7 +415,8 @@ def score_docs_pm():
             
 def score_docs_wrm():
     """
-    Scores the TaggedDocuments in "../data/webresourcemanager/TaggedDocuments/Labeled" using Web Resource Manager Doc2Vec model and saves them in "../data/webresourcemanager/TaggedDocuments/Classified/".
+    Scores the TaggedDocuments in "../data/webresourcemanager/TaggedDocuments/Labeled" using 
+    Web Resource Manager Doc2Vec model and saves them in "../data/webresourcemanager/TaggedDocuments/Classified/".
 
     
     Returns
@@ -436,7 +443,9 @@ def score_docs_wrm():
 
 def train_model_pm():
     """
-    Trains a Profile Manager Doc2Vec model using the TaggedDocuments in "../data/profilemanager/TaggedDocuments/Labeled/" and saves the model at "../data/profilemanager/doc2vec_model"
+    Trains a Profile Manager Doc2Vec model using the TaggedDocuments in 
+    "../data/profilemanager/TaggedDocuments/Labeled/" and 
+    saves the model at "../data/profilemanager/doc2vec_model"
 
 
     Returns
@@ -459,7 +468,8 @@ def train_model_pm():
     
 def train_model_wrm():
     """
-    Trains a Web Resource Manager Doc2Vec model using the TaggedDocuments in "../data/webresourcemanager/TaggedDocuments/Labeled" and saves the model at "../data/doc2vec_model"
+    Trains a Web Resource Manager Doc2Vec model using the TaggedDocuments in 
+    "../data/webresourcemanager/TaggedDocuments/Labeled" and saves the model at "../data/doc2vec_model"
     
     
     Returns
