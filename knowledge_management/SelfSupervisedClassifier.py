@@ -12,9 +12,6 @@ sys.path.append("..")
 from knowledge_management.ProfileManager import *
 from knowledge_management.WebResourceManager import *
 
-
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-
 def convert_to_corpus(doc):
     """
     Sets all of the text to lower case, removes all non-alphanumeric characters besides apostrophe (') and hyphen (-) with a Regular Expression. All words are lemmatized and then stemmed.
