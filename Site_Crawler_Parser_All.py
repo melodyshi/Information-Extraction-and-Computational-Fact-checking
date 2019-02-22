@@ -3,7 +3,7 @@
 """
 Created on Thu Aug 16 11:38:53 2018
 
-@author: Melody
+@author: Melody Shi
 """
 
 from selenium import webdriver
@@ -618,7 +618,7 @@ def wikiParser(company):
         print("Wikipedia Table does not exist for {}".format(company))
     return (wiki_page, wiki_table, title, link, table)
 
-if __name__ == "__main__":
+def main():
     print('Please select an engine:')
     print('1. TRI Facility Information(TRI)')
     print('2. Recursive Google Subsidiaries(GOOGLE)')
@@ -670,3 +670,7 @@ if __name__ == "__main__":
         wiki = wikiParser(name)
         print(json.dumps(wiki[1], indent = 4, sort_keys = True))
         print(json.dumps(wiki[0], indent = 4, sort_keys = True))
+    return
+
+if __name__ == "__main__":
+    main()
