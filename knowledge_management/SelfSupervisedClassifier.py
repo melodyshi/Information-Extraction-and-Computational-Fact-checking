@@ -2,8 +2,17 @@
 """
 Created on Mon Jul  2 20:24:15 2018
 
+This program is developed as a model for classifying documents as relevant or not. 
+The approach was inspired by Banko et al.'s 2007 "Open Information Extraction from the Web" 
+which used a self-supervised learner to perform open information extraction. 
+
+The same approach is taken for relevancy classification by having the learner 
+tag certain sentences as relevant or irrelevant based on keyword input and then Doc2Vec 
+is trained on these tagged sentences to learn more complex features.
+
 @author: Melody Shi
 """
+
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 import logging, sys, time
 from nltk.tokenize import sent_tokenize, word_tokenize
