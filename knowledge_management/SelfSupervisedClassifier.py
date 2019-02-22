@@ -7,8 +7,8 @@ The approach was inspired by Banko et al.'s 2007 "Open Information Extraction fr
 which used a self-supervised learner to perform open information extraction. 
 
 The same approach is taken for relevancy classification by having the learner 
-tag certain sentences as relevant or irrelevant based on keyword input and then Doc2Vec 
-is trained on these tagged sentences to learn more complex features.
+tag certain sentences as relevant or irrelevant based on keyword input and then 
+Doc2Vec is trained on these tagged sentences to learn more complex features.
 
 @author: Melody Shi
 """
